@@ -4,20 +4,19 @@ import os
 import csv
 from pathlib import Path
 
-# Define constants
+# Defining training,validation split
 SEED = 42
 TRAIN_RATIO = 0.8
 VALIDATION_RATIO = 0.1
 TEST_RATIO = 0.1
 
-# Define file paths (adjust these to match your laptop's directory structure)
+# Defining file paths 
 MAIN_FOLDER = Path("C:/Users/Admin/Desktop/Skin-cancer/data")
 CSV_LOCATION = MAIN_FOLDER / "HAM10000_metadata.csv"
 TRAIN_FOLDER = MAIN_FOLDER / "train"
 TEST_FOLDER = MAIN_FOLDER / "test"
 VALIDATION_FOLDER = MAIN_FOLDER / "validation"
 
-# Define the two image subfolders
 IMAGE_FOLDER_1 = MAIN_FOLDER / "HAM10000_images_part_1"
 IMAGE_FOLDER_2 = MAIN_FOLDER / "HAM10000_images_part_2"
 
